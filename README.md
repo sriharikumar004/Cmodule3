@@ -18,15 +18,9 @@ To formulate a C program to convert a decimal number into its binary equivalent 
   Read the decimal number from the user.
 ### Step 5: 
   Initialize i = 0.
-### Step 6: 
-  Repeat while num > 0:
-  Divide num by 2 and store the remainder in binary[i].
-  Increment i.
-  Update num = num / 2.
 ### Step 7: 
   Display the binary digits in reverse order (from i-1 down to 0).
-### Step 8: 
-   Stop
+
 # Program:
 
     #include <stdio.h>
@@ -92,16 +86,11 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7: 
    For each row `i` from `0` to `m−1`:
 - **Step 7.1:** Set `min` as the first element of the row.  
-- **Step 7.2:** Scan the row to find its minimum element and store its position in `pos[0]`.  
-- **Step 7.3:** Let `j` be the column of this minimum element.  
-- **Step 7.4:** Set `max` as the first element of column `j`.  
-- **Step 7.5:** Scan column `j` to find its maximum element and store its position in `pos[1]`.  
+- **Step 7.2:** Scan the row to find its minimum element and store its position in `pos[0]`. 
 ### Step 8: 
   Check if the row minimum equals the column maximum:
 - If `min == max` **and their positions match**, then the element is a **saddle point**.
 - Print the saddle point value and its position.
-### Step 9: 
-  Stop
 # Program:#include <stdio.h>
     #include<stdio.h>
     
@@ -183,10 +172,6 @@ Thus, the program was implemented and executed successfully, and the required ou
   Find the length of the string `s` by traversing it until the null character `'\0'` is encountered.
 ### Step 6: 
   Initialize a counter `j` for the reversed string.
-### Step 7: 
-  Copy characters from the end of `s` to the beginning of `d` using a loop until all characters are copied in reverse order.
-### Step 8: 
-  Terminate the reversed string `d` with the null character `'\0'`.
 ### Step 9: 
   Print the reversed string.
 ### Step 10: 
@@ -249,9 +234,6 @@ Thus, the program was implemented and executed successfully, and the required ou
  For each character `s[i]` in the string (from `i = 0` to `n - 1`):
  - If `visited[(unsigned char)s[i]] == 0` (character not yet counted):  
   - Initialize `count = 0`.  
-  - Loop through the string again and increment `count` for every occurrence of `s[i]`.  
-  - Print `s[i]` and its count.  
-  - Set `visited[(unsigned char)s[i]] = 1` to mark it as counted.
 ### Step 7: 
   Repeat Step 6 for all characters.
 ### Step 8:
