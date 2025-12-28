@@ -335,35 +335,58 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8: 
   Stop
 # Program:
-#include <stdio.h>
-#include <string.h>
-int main() {
+    
+    #include <stdio.h>
+    
+    #include <string.h>
+    
+    int main() {
+    
     char str[200], words[50][50];
+    
     int i, j, k = 0, wc = 0;
+    
     printf("Enter a string: ");
+    
     scanf("%[^\n]", str);
+    
     for(i = 0; ; i++) {
+    
         if(str[i] == ' ' || str[i] == '\0') {
+        
             words[wc][k] = '\0';
+            
             wc++;
+            
             k = 0;
+            
             if(str[i] == '\0') break;
-        } else {
+        } el
+        se {
+        
             words[wc][k++] = str[i];
-        }
+        }   
     }
     for(i = 0; i < wc; i++) {
+    
         if(words[i][0] == '\0') continue;
+        
         for(j = i + 1; j < wc; j++) {
+        
             if(strcmp(words[i], words[j]) == 0)
+            
                 words[j][0] = '\0';
         }
+        
     }
     printf("\nUnique Words:\n");
+    
     for(i = 0; i < wc; i++)
+    
         if(words[i][0] != '\0')
+        
             printf("%s ", words[i]);
-    return 0;
+    return;
 }
 # Output:
 <img width="582" height="164" alt="image" src="https://github.com/user-attachments/assets/4ff109db-2c01-4090-8575-1cbcfbf29943" />
